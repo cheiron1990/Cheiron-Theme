@@ -1,0 +1,36 @@
+{
+    "name": "Cheiron",
+    "description": "Cheiron's personal blog theme for Ghost. Modify from the default Casper Theme.",
+    "demo": "https://zyy.life",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "author": {
+        "name": "Cheiron",
+        "email": "cheironde@gmail.com",
+        "url": "https://zyy.life"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Personal Blogs"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cheiron1990/Cheiron-Theme.git"
+    },
+    "bugs": "https://github.com/cheiron1990/Cheiron-Theme/issues",
+    "contributors": "https://github.com/cheiron1990/Cheiron-Theme/graphs/contributors"
+}
