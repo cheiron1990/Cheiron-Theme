@@ -320,7 +320,7 @@ blockquote {
     box-sizing: border-box;
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    border-left: #565c5f 0.4em solid;
 }
 
 blockquote p {
@@ -1008,6 +1008,22 @@ body.page-template .post-title {
     -webkit-transform: translateX(-50%); /* for Safari and iOS */
     -ms-transform: translateX(-50%); /* for IE9 */
     transform: translateX(-50%);
+}
+
+/* Post Content Custom Style */
+.post-content h2 {
+    font-weight: 500;
+}
+.post-content h2:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d2d2d2;
+    border-bottom: 1px solid #fff;
+    margin: 0.4em 0 0.8em 0;
+}
+.post-content h3, .post-content h4, .post-content h5 {
+    font-weight: 400;
 }
 
 .footnotes {
