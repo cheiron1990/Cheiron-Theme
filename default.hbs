@@ -43,7 +43,7 @@
             var searchBar = document.getElementById('searchBar');
             searchBar.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
-                    window.open('https://www.google.com/#q=' + this.value + '+site:zyy.life', '_blank');
+                    window.open('https://www.google.com/#q=' + this.value + '+site:' + window.location.hostname, '_blank');
                 }
             });
         })();
