@@ -38,6 +38,17 @@
 
     </div>
 
+    <script type="text/javascript">
+        (function(){
+            var searchBar = document.getElementById('searchBar');
+            searchBar.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    window.open('https://www.google.com/#q=' + this.value + '+site:zyy.life', '_blank');
+                }
+            });
+        })();
+    </script>
+
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
 

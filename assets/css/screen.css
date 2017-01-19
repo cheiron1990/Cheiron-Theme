@@ -105,19 +105,19 @@ td, th{ padding: 0; }
 
 /* Import the font file with the icons in it */
 @font-face {
-    font-family: "casper-icons";
-    src:url("../fonts/casper-icons.eot?v=1");
-    src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
-        url("../fonts/casper-icons.woff?v=1") format("woff"),
-        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
-        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+    font-family: "cheiron-icons";
+    src:url("../fonts/cheiron-icons.eot?v=1");
+    src:url("../fonts/cheiron-icons.eot?v=1#iefix") format("embedded-opentype"),
+        url("../fonts/cheiron-icons.woff?v=1") format("woff"),
+        url("../fonts/cheiron-icons.ttf?v=1") format("truetype"),
+        url("../fonts/cheiron-icons.svg?v=1#icons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "cheiron-icons", "Open Sans", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -162,6 +162,9 @@ td, th{ padding: 0; }
 }
 .icon-menu:before {
     content: "\f609";
+}
+.icon-search:before {
+    content: "\e986";
 }
 /*
     IMPORTANT: When making any changes to the icon font, be sure to increment
@@ -608,13 +611,20 @@ body.nav-opened .site-wrapper {
 
 /* Navigation */
 .nav {
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
     margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .nav ul {
     padding: 24px 9%;
     list-style: none;
+    padding: 0;
 }
 
 .nav li {
@@ -642,14 +652,55 @@ body.nav-opened .site-wrapper {
     color: #fff;
 }
 
+.nav .search-form {
+    display: inline-block;
+    float: right;
+    height: 2.4rem;
+}
+
+.nav .search-form:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.nav .search-form:before {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-left: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.nav .search-form input {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+    line-height: 1rem;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    width: 5rem;
+    height: 1.4rem;
+    padding: 0 8px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    transition: width .4s;
+}
+
+.nav .search-form input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav .search-form input:focus {
+    width: 120px;
+}
+
 .nav a.subscribe-button {
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.4rem;
     line-height: 1.4rem;
     text-align: right;
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    margin-left: 8px;
 }
 .nav a.subscribe-button:hover {
     color: #ffffff;
@@ -658,23 +709,6 @@ body.nav-opened .site-wrapper {
     font-size: 9px;
     margin-right: 6px;
 }
-
-.top-right .nav {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
-
-.top-right .nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-.top-right .nav a.subscribe-button {
-    position: static;
-    margin-left: 8px;
-}
-
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
@@ -797,6 +831,31 @@ body.nav-opened .site-wrapper {
     color: #B8B8B8;
 }
 .no-cover .nav a.subscribe-button:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+.no-cover .nav .search-form:hover {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.no-cover .nav .search-form:before {
+    color: #B8B8B8;
+}
+
+.no-cover .nav .search-form:hover:before {
+    color: rgba(0,0,0,0.5);
+}
+
+
+.no-cover .nav .search-form input {
+    color: #B8B8B8;
+}
+
+.no-cover .nav .search-form input::placeholder {
+    color: #B8B8B8;
+}
+
+.no-cover .nav .search-form:hover input {
     color: rgba(0,0,0,0.5);
 }
 
