@@ -656,6 +656,8 @@ body.nav-opened .site-wrapper {
     display: inline-block;
     float: right;
     height: 2.4rem;
+    padding-left: 8px;
+    position: relative;
 }
 
 .nav .search-form:hover {
@@ -664,23 +666,19 @@ body.nav-opened .site-wrapper {
 
 .nav .search-form:before {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-    margin-left: 4px;
-    position: relative;
-    top: 2px;
+    font-size: 1.2rem;
 }
 
 .nav .search-form input {
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.4rem;
-    line-height: 1rem;
+    line-height: 2.4rem;
     background: none;
     border: none;
     border-radius: 0;
     outline: none;
-    width: 5rem;
-    height: 1.4rem;
+    width: 60px;
+    height: 2.4rem;
     padding: 0 8px;
     margin-bottom: 0;
     box-sizing: border-box;
